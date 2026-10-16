@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ef">
+  <meta name="description" content="OBJECTS — персональный интерактивный архив искусства и визуального вдохновения.">
+  <title>OBJECTS — Personal Art Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a href="#top" class="brand" aria-label="OBJECTS, наверх">ОБЪЕКТЫ<span class="brand-dot">.</span></a>
+      <span class="topbar-subtitle">НЕЗАВИСИМЫЙ ВИЗУАЛЬНЫЙ АРХИВ <span class="divider-dot">/</span> 2026</span>
+      <a class="topbar-link" href="#workspace">АРХИВ <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-index"><span>ISSUE NO. 001</span><span>ИСКУССТВО ВИДЕТЬ</span></div>
+        <div class="intro-heading"><h1 id="page-title">Объекты<span>.</span></h1><span class="intro-mark">®</span></div>
+        <div class="intro-bottom"><p>Коллекция<br><em>которую хочется сохранить.</em></p><div class="intro-description">Ваше персональное место для изучания,<br>созерцания и коллекционирования визуальной культуры.<br><span>СКРОЛЛЬ ЧТОБЫ УЗРЕТЬ ↓</span></div></div>
+        <div class="intro-ornament" aria-hidden="true">✳</div>
+      </section>
+
+      <section id="workspace" class="workspace" aria-label="Управление виджетами">
+        <div class="workspace-header"><div><span class="kicker">01 / РАБОЧАЯ ЗОНА </span><h2>Ваше личное пространство<span class="wine">.</span></h2><p class="workspace-caption">Живая коллекция — в вашем прочтении</p></div><div class="add-wrap"><button class="add-button" id="add-widget-button" type="button" aria-expanded="false" aria-controls="add-menu"><span aria-hidden="true">＋</span> ДОБАВИТЬ ВИДЖЕТ</button><div class="add-menu" id="add-menu" hidden aria-label="Добавить виджет"><button data-add="notes" type="button">01 / Коллекционные заметки <span>↗</span></button><button data-add="art" type="button">02 / Искусство открытий <span>↗</span></button><button data-add="museum" type="button">03 / Музейный архив <span>↗</span></button><button data-add="saved" type="button">04 / Сохранённые объекты <span>↗</span></button></div></div></div>
+        <div id="widget-grid" class="widget-grid" aria-live="polite"></div>
+        <p id="empty-workspace" class="empty-workspace" hidden>Экспозиция пока пуста. Добавьте виджет, чтобы начать.</p>
+      </section>
+
+      <section class="closing" aria-label="Об архиве"><span>КАТАЛОГ / ЗАМЕТКИ ВИЗУАЛА</span><p>Коллекция значит <em>внимание.</em></p><span>ОБЪЕКТЫ. МЕСТО ДЛЯ ВАШЕГО ВИЗУАЛЬНОГО ВОСПРИЯТИЯ.</span></section>
+    </main>
+
+    <footer class="footer"><span>ОБЪЕКТЫ © 2026</span><span>ARTWORKS FROM THE ART INSTITUTE OF CHICAGO & THE MET</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
